@@ -1,0 +1,191 @@
+/* CSS pour la page de profil */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #333; /* Gris foncé comme la barre de navigation */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 20px 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #4B9CD3; /* Bleu UNC au survol */
+}
+
+.logout-btn {
+    color: #fff !important;
+    background-color: rgba(220, 53, 69, 0.2);
+}
+
+.logout-btn:hover {
+    background-color: rgba(220, 53, 69, 0.4) !important;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    margin-left: 250px;
+    padding: 30px;
+}
+
+.main-content h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Orders Section */
+.orders {
+    margin-bottom: 30px;
+}
+
+.orders h2 {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+.order-item {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.order-item h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.order-item p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.order-item form {
+    margin-top: 15px;
+}
+
+.order-item button {
+    padding: 8px 15px;
+    background-color: #4B9CD3; /* Bleu UNC */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-item button:hover {
+    background-color: #3d7fb1; /* Bleu UNC plus foncé */
+}
+
+.order-item p strong {
+    color: #28a745;
+}
+
+/* Profile Info Section */
+.profile-info {
+    margin-bottom: 30px;
+}
+
+.profile-info h2 {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+.info-card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+}
+
+.info-item {
+    margin-bottom: 15px;
+}
+
+.info-label {
+    font-weight: bold;
+    color: #666;
+    margin-right: 10px;
+}
+
+.info-value {
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    
+    .sidebar ul li {
+        margin: 5px;
+    }
+    
+    .sidebar ul li a {
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+}

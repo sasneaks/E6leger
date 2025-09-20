@@ -1,0 +1,25 @@
+{
+    "name": "test/test",
+    "description": "test",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Test\\Test\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "test"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "stripe/stripe-php": "^16.3@beta",
+        "google/auth": "^1.43",
+        "spomky-labs/otphp": "^11.3",
+        "php": "^7.3 || ^8.0 || ^8.3",
+        "symfony/console": "^7.1",
+        "sonata-project/google-authenticator": "^2.3"
+    }
+}

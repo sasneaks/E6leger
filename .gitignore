@@ -1,0 +1,57 @@
+# Fichiers de configuration sensibles
+.env
+.env.local
+.env.*.local
+
+# Logs
+storage/logs/*.log
+*.log
+
+# Cache
+storage/cache/*
+!storage/cache/.gitkeep
+
+# Uploads temporaires
+storage/uploads/temp/*
+
+# Configuration locale
+config/config.php
+
+# Vendor (si utilisation de Composer)
+/vendor/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Node modules (si utilisation de npm)
+node_modules/
+
+# Composer
+composer.phar
+composer.lock
+
+# Backup files
+*.sql.bak
+*.sql.backup
+
+# Error logs
+error_log
+php_errors.log

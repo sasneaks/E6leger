@@ -1,0 +1,252 @@
+	/* Global Styling */
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: 'Arial', sans-serif;
+		background-color: #f4f4f4;
+		/* Fond gris clair */
+		color: #333;
+		/* Texte gris foncé */
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	/* Layout Styling */
+	.container {
+		display: flex;
+		height: 100vh;
+	}
+
+	/* Sidebar Styling */
+	.sidebar {
+		width: 250px;
+		background-color: #1c1c1c;
+		/* Fond noir pour la sidebar */
+		padding: 20px;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+	}
+
+	.sidebar h2 {
+		margin-bottom: 30px;
+		font-size: 22px;
+		color: #f4f4f4;
+		/* Gris clair pour le titre */
+	}
+
+	.sidebar ul li {
+		margin-bottom: 20px;
+	}
+
+	.sidebar ul li a {
+		color: #f4f4f4;
+		/* Lien en gris clair */
+		font-size: 16px;
+		padding: 10px;
+		display: block;
+		border-radius: 5px;
+		transition: background-color 0.3s ease;
+	}
+
+	.sidebar ul li a:hover {
+		background-color: #333333;
+		/* Gris plus foncé au survol */
+	}
+
+	/* Logout button in Sidebar */
+	.logout-btn {
+		background-color: #e74c3c;
+		/* Rouge pour le bouton de déconnexion */
+		color: white;
+		padding: 10px 20px;
+		border-radius: 5px;
+		text-align: center;
+	}
+
+	.logout-btn:hover {
+		background-color: #c0392b;
+		/* Rouge plus foncé au survol */
+	}
+
+	/* Main Content Styling */
+	.main-content {
+		flex-grow: 1;
+		padding: 40px;
+		background-color: white;
+		/* Fond blanc pour le contenu principal */
+		overflow-y: auto;
+	}
+
+	.main-content h1 {
+		font-size: 28px;
+		margin-bottom: 20px;
+		color: #1c1c1c;
+		/* Texte en noir */
+	}
+
+	/* Sections Styling */
+	.Gorders,
+	.gproducts,
+	.Gemployes,
+	.gclients {
+		background-color: #f9f9f9;
+		/* Gris très clair pour les sections */
+		padding: 20px;
+		margin-bottom: 30px;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		/* Légère ombre pour le relief */
+	}
+
+	.Gorders h2,
+	.gproducts h2,
+	.Gemployes h2,
+	.gclients h2 {
+		font-size: 22px;
+		margin-bottom: 15px;
+		color: #1c1c1c;
+		/* Titre en noir */
+	}
+
+	/* Order and Item Details */
+	.order-item {
+		padding: 10px;
+		background-color: white;
+		border-radius: 8px;
+		margin-bottom: 15px;
+		box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+	}
+
+	.order-item h3 {
+		font-size: 18px;
+		color: #333;
+		/* Titre en gris foncé */
+		margin-bottom: 10px;
+	}
+
+	.order-item p {
+		margin-bottom: 5px;
+	}
+
+	.view-details-btn {
+		background-color: #333;
+		/* Gris foncé pour le bouton */
+		color: white;
+		padding: 8px 15px;
+		border-radius: 5px;
+		cursor: pointer;
+		border: none;
+	}
+
+	.view-details-btn:hover {
+		background-color: #1c1c1c;
+		/* Noir au survol */
+	}
+
+	.order-details {
+		margin-top: 15px;
+		display: none;
+		background-color: #f4f4f4;
+		/* Gris clair pour les détails de commande */
+		padding: 15px;
+		border-radius: 8px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	}
+
+	.order-details ul {
+		list-style-type: none;
+	}
+
+	.order-details ul li {
+		padding: 8px 0;
+	}
+
+	/* Payment Methods */
+	.payment-item {
+		margin-bottom: 15px;
+		font-size: 16px;
+	}
+
+	/* Profile Information */
+	.Gorders p {
+		margin-bottom: 10px;
+	}
+
+	.edit-btn {
+		background-color: #333;
+		/* Bouton gris foncé */
+		color: white;
+		padding: 10px 20px;
+		border-radius: 5px;
+		border: none;
+		cursor: pointer;
+	}
+
+	.edit-btn:hover {
+		background-color: #1c1c1c;
+		/* Bouton noir au survol */
+	}
+
+	/* Responsive Design */
+	@media (max-width: 768px) {
+		.container {
+			flex-direction: column;
+		}
+
+		.sidebar {
+			width: 100%;
+			padding: 15px;
+		}
+
+		.main-content {
+			padding: 20px;
+		}
+	}
+   /* Table Styling */
+table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-bottom: 30px;
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre */
+}table thead {
+   background-color: #1C1C1C
+; /* Fond noir */
+   color: white; /* Texte blanc pour l'en-tête */
+}table th, table td {
+   padding: 12px 15px;
+   text-align: left;
+   border-bottom: 1px solid #DDDDDD
+; /* Ligne de séparation */
+}table th {
+   font-size: 16px;
+   font-weight: bold;
+}table tbody tr:nth-child(even) {
+   background-color: #F9F9F9
+; /* Fond gris clair pour les lignes paires */
+}table tbody tr:hover {
+   background-color: #F1F1F1
+; /* Légère couleur survol */
+}table td,#deletbtn {
+   font-size: 14px;
+   color: #333; /* Texte gris foncé */
+}table td a,#deletbtn {
+   color: #333; /* Lien dans le tableau */
+   text-decoration: underline;
+}table td a:hover,#deletbtn:hover {
+   color: #1C1C1C
+; /* Lien foncé au survol */
+}
